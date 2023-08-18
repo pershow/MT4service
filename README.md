@@ -3,4 +3,4 @@
 #
 当然你也可以打赏我：USDT-TRC20--:TSuizvJ381HUSiahq2siCRn3j73nxZXVub
 #
-ip:1270.0.0.1:xxxx Account: 1 Password:manager
+ip:127.0.0.0.1:xxxx Account: 1 Password:manager
