@@ -1,0 +1,174 @@
+<html>
+ <head>
+ <title>MetaTrader Log Analyser Daily Report: <!--DATE--></title>
+ <meta name="Generator" content="MetaTrader Log Analyser">
+ <style type="text/css" media="screen">
+ <!--
+ body  { font-family: Tahoma, Arial, Helvetica, sans-serif; font-size:12px;  }
+
+ .atten
+  {
+   text-align : center;
+   border: 1px solid #B3B3B3;
+   background-color: #FFFFFF;
+   padding: 10px;
+   font-size: 12px;
+   color: #FF0000;
+   margin-top: 10px;
+   margin-bottom: 10px;
+  }
+
+
+ tr.g  { background: #E0E0E0; }
+ td    { font: 8pt Tahoma,Arial; text-align: right; }
+ td.c  { font: 8pt Tahoma,Arial; text-align: center; }
+ td.l  { font: 8pt Tahoma,Arial; text-align: left; }
+ td.lb { font: 8pt Tahoma,Arial; text-align: left; font-weight: bold; }
+ td.r  { font: 8pt Tahoma,Arial; color: red; text-align: right; font-weight: bold; }
+ td.lr { font: 8pt Tahoma,Arial; color: red; text-align: left; font-weight: bold; }
+ td.b  { font: 8pt Tahoma,Arial; color: blue; text-align: right; font-weight: bold; }
+ td.bar    { border: 1 solid Black; background: "#5555ff"; }
+ td.redbar { border: 1 solid Black; background: "#FF6666"; }
+
+ td.lhddgreen { border-top: 1 solid Black; border-bottom: 1 solid Black; border-left: 1 solid Black; background: "#55ff55"; }
+ td.lhddred   { border-top: 1 solid Black; border-bottom: 1 solid Black; border-left: 1 solid Black; background: "#ff6666"; }
+
+ td.hddgreen  { border-top: 1 solid Black; border-bottom: 1 solid Black; background: "#55ff55"; }
+ td.hddcurr   { border: 1 solid Black; background: "#ffffff"; }
+ td.hddred    { border-top: 1 solid Black; border-bottom: 1 solid Black; background: "#ff6666"; }
+
+ td.rhddgreen { border-top: 1 solid Black; border-bottom: 1 solid Black; border-right: 1 solid Black; background: "#55ff55"; }
+ td.rhddred   { border-top: 1 solid Black; border-bottom: 1 solid Black; border-right: 1 solid Black; background: "#ff6666"; }
+
+ center.title { font: 11pt Tahoma,Arial; }
+
+ //-->
+ </style>
+</head>
+
+<body leftmargin=2 topmargin=2 rightmargin=2 bottommargin=2>
+<center class=title><b>Log Analyser Daily Report: <!--DATE--></b></center>
+
+<div align=center>
+
+<table width="100%" cellspacing=1 cellpadding=1 border=0>
+<tr><td class=lb>Summary:</td></tr>
+<tr><td><table width="100%" cellspacing=1 cellpadding=2 border=0>
+ <tr bgcolor="#C0C0C0"><td width="10%">Type</td><td width="90%">Messages</td></tr>
+ <!--SUMMARY_LIST--></table>
+</td></tr>
+
+
+<tr><td class=lb><br>Critical errors:</td></tr>
+<tr><td><table width="100%" cellspacing=1 cellpadding=2 border=0>
+ <tr bgcolor="#C0C0C0"><td width="10%">IP</td><td width="6%">Repeats</td><td width="84%" class=l>Details</td></tr>
+ <!--CRITICAL_ERRORS_LIST--></table>
+</td></tr>
+
+
+<tr><td class=lb>Recommendations:</td></tr>
+<tr><td><table width="100%" cellspacing=1 cellpadding=2 border=0>
+ <tr bgcolor="#C0C0C0"><td width="35%" class=l>Text</td><td width="65%" class=l>Comment</td></tr>
+ <!--RECOMMENDATIONS_LIST--> </table>
+</td></tr>
+
+
+<tr><td class=lb><br>Hard Disk Status:</td></tr>
+<tr><td><table width="100%" cellspacing=1 cellpadding=2 border=0>
+ <tr bgcolor="#C0C0C0"><td width="10%" class=l>Parameter</td><td width="25%" title="To get precise data, it is necessary to analyse logs of the system, logs of the trade server, and hard disk analysers reports.">Status</td><td width="65%" class=l>Comment</td></tr>
+ <!--HARDWARE_LIST--></table>
+</td></tr>
+
+
+<tr><td class=lb><br>Managers connections:</td></tr>
+<tr><td><table width="100%" cellspacing=1 cellpadding=2 border=0>
+ <tr bgcolor="#C0C0C0"><td width="10%">IP</td><td width="90%" class="l">Logins</td></tr>
+ <!--ACCESS_LIST--></table>
+</td></tr>
+
+
+<tr><td class=lb><br>Active managers (dealing for <!--GROUPS--> groups):</td></tr>
+<tr><td><table width="100%" cellspacing=1 cellpadding=2 border=0>
+ <tr bgcolor="#C0C0C0"><td width="8%" rowspan="2">Messages</td><td width="8%" rowspan="2">Login</td><td width="11%" class=l rowspan="2">Name</td><td width="8%" rowspan="2">Connections</td><td width="9%" rowspan="2">Requests / Instant</td><td width="8%" rowspan="2">Requotes</td><td width="8%" title="requests lost during the dealer's work" rowspan="2">Lost requests</td><td rowspan="2">Rejects</td>
+    <td width="16%" colspan="2" align="center"><center>Dealing</center></td>
+    <td width="16%" title="+ (blue) - pips to user, - (red) - pips to dealer" colspan="2" align="center"><center>Orders</center></td>
+ <tr bgcolor="#C0C0C0">
+    <td width="8%" title="+ (blue) - USD to user, - (red) - USD to dealer">USD</td><td width="8%"  title="+ (blue) - pips to user, - (red) - pips to dealer">Pips</td>
+    <td width="8%" title="+ (blue) - USD to user, - (red) - USD to dealer">USD</td><td width="8%" title="+ (blue) - pips to user, - (red) - pips to dealer">Pips</td></tr>
+   <!--MANAGERS_LIST--></table>
+</td></tr>
+
+
+<tr><td class=lb><br>Dangerous confirmations and requotes for <!--GROUPS--> groups (all profits are converted into USD):</td></tr>
+<tr><td><table width="100%" cellspacing=1 cellpadding=2 border=0>
+ <tr bgcolor="#C0C0C0">
+   <td width="7%" title="+ (blue) - USD to user, - (red) - USD to dealer  (USD)">USD</td>
+   <td width="5%" title="+ (blue) - pips to user, -(red) - pips to dealer">Pips</td>
+   
+   <td width="88%" class=l>Details</td></tr>
+ <!--DANGEROUS_CONFIRMS_LIST--></table>
+</td></tr>
+
+
+<tr><td class=lb>Dangerous orders for <!--GROUPS--> groups (all profits are converted into USD):</td></tr>
+<tr><td><table width="100%" cellspacing=1 cellpadding=2 border=0>
+ <tr bgcolor="#C0C0C0">
+   <td width="7%" title="+ (blue) - money to user, - (red) - money to dealer (USD)">USD</td>
+   <td width="5%" title="+ (blue) - pips to user, -(red) - pips to dealer ">Pips</td>
+   <td width="88%" class=l>Details</td></tr>
+ <!--DANGEROUS_ORDERS_LIST--></table>
+</td></tr>
+
+
+<tr><td class=lb>Dangerous requests:</td></tr>
+<tr><td><table width="100%" cellspacing=1 cellpadding=2 border=0>
+ <tr bgcolor="#C0C0C0"><td width="5%">Login</td><td width="5%">Repeats</td><td width="5%">Delay</td><td width="85%" class=l>Details</td></tr>
+ <!--DANGEROUS_REQUESTS_LIST--></table>
+</td></tr>
+
+
+<tr><td class=lb>Dangerous ticks:</td></tr>
+<tr><td><table width="100%" cellspacing=1 cellpadding=2 border=0>
+ <tr bgcolor="#C0C0C0"><td width="5%">Pips</td><td width="95%" class=l>Details</td></tr>
+ <!--DANGEROUS_TICKS_LIST--></table>
+</td></tr>
+
+
+<tr><td class=lb><br>Terminal versions:</td></tr>
+<tr><td><table width="100%" cellspacing=1 cellpadding=2 border=0>
+ <tr bgcolor="#C0C0C0"><td width="7%">Build</td><td width="93%">Unique logins</td></tr>
+ <!--TERMINAL_BUILDS_LIST--></table>
+</td></tr>
+
+<tr><td class=lb>Terminal types:</td></tr>
+<tr><td><table width="100%" cellspacing=1 cellpadding=2 border=0>
+ <tr bgcolor="#C0C0C0"><td width="7%">Type</td><td width="93%">Unique logins</td></tr>
+ <!--TERMINAL_TYPES_LIST--></table>
+</td></tr>
+
+
+<tr><td class=lb><br>Top hyperactive accounts:</td></tr>
+<tr><td><table width="100%" cellspacing=1 cellpadding=2 border=0>
+ <tr bgcolor="#C0C0C0"><td width="10%">Messages</td><td width="10%">Login</td><td width="15%" class=l>Group</td><td width="10%">IP</td><td width="15%" class=l>Name</td><td width="15%" class=l>Country</td><td width="15%">Email</td></tr>
+ <!--HYPERACTIVE_USERS_LIST--> </table>
+</td></tr>
+
+
+<tr><td class=lb><br>Active datafeeds:</td></tr>
+<tr><td><table width="100%" cellspacing=1 cellpadding=2 border=0>
+ <tr bgcolor="#C0C0C0"><td width="8%">Priority</td><td width="8%">Activations</td><td width="84%" class=l>Name</td></tr>
+ <!--DATAFEEDS_LIST--></table>
+</td></tr>
+
+</table>
+</div>
+
+
+<div class="atten">
+
+The detailed description of LogAnalyser report can be found on MetaQuotes Support site at the following links: 
+<a href="http://support.metaquotes.net/articles/214" target="_blank">english version</a> or
+<a href="http://support.metaquotes.net/articles/205" target="_blank">russian version</a>.<br>
+</div>
+
+</body></html>

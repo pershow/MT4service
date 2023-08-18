@@ -1,0 +1,300 @@
+;---------------------------------------------------
+; MetaTrader Chart Generator configuration
+; Copyright 2001-2005, MetaQuotes Software Corp.
+; http://www.metaquotes.net
+;---------------------------------------------------
+; FTP settings
+; commands: 
+;   server=ftp.your_domain.com
+;   login=your_ftp_login
+;   password=your_ftp_password
+;   path=/inetpub/charts
+;   bindport=0-65535              (0 - default)
+;   passive=0|1                   (FTP passive mode: 0 - off, 1 - on)
+;
+server=www.metaquotes.ru
+login=
+password=
+path=inetpub/charts/dealing_rates
+
+;
+; Local storage path
+; commands: 
+;   filepath=d:\inetpub\charts\dealing_rates\
+;
+filepath=d:\inetpub\charts\dealing_rates\
+;filepath=E:\NewProject\MetaTraderChartDraw\Release\export\
+
+;
+; Chart settings
+; commands: 
+;   width=230
+;   height=100
+;   margin_top=0
+;   margin_left=0
+;   margin_right=0
+;   margin_bottom=0
+;
+;   backcolor=white
+;   framecolor=#000000
+;   chartcolor=blue
+;   gridcolor=gray
+;   volumecolor=green
+;   lastpricecolor=red
+;
+;   scale=1|2|4|8|16
+;   timestamp=0|1                 (0 - off, 1 - on)
+;   chartmode=0|1|2               (0 - bar, 1 - candle, 2 - line)
+;   volume=0|1                    (0 - off, 1 - on)
+;   grid=0|1                      (0 - off, 1 - on)
+;   lastprice=0|1                 {0 - off, 1 - on)
+;   moving=16,#FF00FF             (EMA period, color) max 4 lines
+;   text=3,2,#F000FF,EURO DAILY   (xpos, ypos, color, text) max 8 strings
+;   file=path_to_FXH_file
+;
+;
+; Colors
+;
+;   AliceBlue, AntiqueWhite, Aqua, Aquamarine, Azure, Beige, Bisque, Black,
+;   BlanchedAlmond, Blue, BlueViolet, Brown, BurlyWood, CadetBlue, Chartreuse,
+;   Chocolate, Coral, CornflowerBlue, Cornsilk, Crimson, Cyan, DarkBlue,
+;   DarkCyan, DarkGoldenrod, DarkGray, DarkGreen, DarkKhaki, DarkMagenta,
+;   DarkOliveGreen, DarkOrange, DarkOrchid, DarkRed, DarkSalmon, DarkSeaGreen,
+;   DarkSlateBlue, DarkSlateGray, DarkTurquoise, DarkViolet, DeepPink,
+;   DeepSkyBlue, DimGray, DodgerBlue, FireBrick, FloralWhite, ForestGreen,
+;   Fuchsia, Gainsboro, GhostWhite, Gold, Goldenrod, Gray, Green, GreenYellow,
+;   Honeydew, HotPink, IndianRed, Indigo, Ivory, Khaki, Lavender, LavenderBlush,
+;   LawnGreen, LemonChiffon, LightBlue, LightCoral, LightCyan, LightGoldenrod,
+;   LightGreen, LightGrey, LightPink, LightSalmon, LightSeaGreen, LightSkyBlue,
+;   LightSlateGray, LightSteelBlue, LightYellow, Lime, LimeGreen, Linen, Magenta,
+;   Maroon, MediumAquamarine, MediumBlue, MediumOrchid, MediumPurple,
+;   MediumSeaGreen, MediumSlateBlue, MediumSpringGreen, MediumTurquoise,
+;   MediumVioletRed, MidnightBlue, MintCream, MistyRose, Moccasin, NavajoWhite,
+;   Navy, OldLace, Olive, OliveDrab, Orange, OrangeRed, Orchid, PaleGoldenrod,
+;   PaleGreen, PaleTurquoise, PaleVioletRed, PapayaWhip, PeachPuff, Peru, Pink,
+;   Plum, PowderBlue, Purple, Red, RosyBrown, RoyalBlue, SaddleBrown, Salmon,
+;   SandyBrown, SeaGreen, Seashell, Sienna, Silver, SkyBlue, SlateBlue,
+;   SlateGray, Snow, SpringGreen, SteelBlue, Tan, Teal, Thistle, Tomato,
+;   Turquoise, Violet, Wheat, White, WhiteSmoke, Yellow, YellowGreen.
+;
+; or any RGB triplets as #rrggbb (example: red = #FF0000)
+;
+
+;
+; source files
+;
+width=238
+height=170
+;margin_top=0
+;margin_left=0
+;margin_right=0
+;margin_bottom=0
+
+backcolor=white
+framecolor=#434343
+chartcolor=#315594
+gridcolor=#E0E0E0
+volumecolor=green
+lastpricecolor=#B80000
+
+scale=4
+volume=0
+grid=1
+chartmode=1
+timestamp=1
+lastprice=1
+
+; EURUSD
+
+width=238
+height=170
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,EURUSD DAILY
+text=4,3,#434343,EURUSD DAILY
+text=5,149,#E8E8E8,METAQUOTES
+text=4,148,#434343,METAQUOTES
+file=d:\metatraderbackup\export\eurusd1440.fxh
+
+width=482
+height=240
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,EURUSD DAILY
+text=4,3,#434343,EURUSD DAILY
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\eurusd1440.fxh
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,EURUSD WEEKLY
+text=4,3,#434343,EURUSD WEEKLY
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\eurusd10080.fxh
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,EURUSD HOURLY
+text=4,3,#434343,EURUSD HOURLY
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\eurusd60.fxh
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,EURUSD 15 MIN
+text=4,3,#434343,EURUSD 15 MIN
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\eurusd15.fxh
+
+
+; GBPUSD
+
+width=238
+height=170
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,GBPUSD DAILY
+text=4,3,#434343,GBPUSD DAILY
+text=5,149,#E8E8E8,METAQUOTES
+text=4,148,#434343,METAQUOTES
+file=d:\metatraderbackup\export\gbpusd1440.fxh
+
+width=482
+height=240
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,GBPUSD DAILY
+text=4,3,#434343,GBPUSD DAILY
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\gbpusd1440.fxh
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,GBPUSD WEEKLY
+text=4,3,#434343,GBPUSD WEEKLY
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\gbpusd10080.fxh
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,GBPUSD HOURLY
+text=4,3,#434343,GBPUSD HOURLY
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\gbpusd60.fxh
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,GBPUSD 15 MIN
+text=4,3,#434343,GBPUSD 15 MIN
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\gbpusd15.fxh
+
+
+; USDCHF
+        
+width=238
+height=170
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,USDCHF DAILY
+text=4,3,#434343,USDCHF DAILY
+text=5,149,#E8E8E8,METAQUOTES
+text=4,148,#434343,METAQUOTES
+file=d:\metatraderbackup\export\usdchf1440.fxh
+
+width=482
+height=240
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,USDCHF DAILY
+text=4,3,#434343,USDCHF DAILY
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\usdchf1440.fxh
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,USDCHF WEEKLY
+text=4,3,#434343,USDCHF WEEKLY
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\usdchf10080.fxh
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,USDCHF HOURLY
+text=4,3,#434343,USDCHF HOURLY
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\usdchf60.fxh
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,USDCHF 15 MIN
+text=4,3,#434343,USDCHF 15 MIN
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\usdchf15.fxh
+
+
+; USDJPY
+
+width=238
+height=170
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,USDJPY DAILY
+text=4,3,#434343,USDJPY DAILY
+text=5,149,#E8E8E8,METAQUOTES
+text=4,148,#434343,METAQUOTES
+file=d:\metatraderbackup\export\usdjpy1440.fxh
+
+width=482
+height=240
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,USDJPY DAILY
+text=4,3,#434343,USDJPY DAILY
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\usdjpy1440.fxh
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,USDJPY WEEKLY
+text=4,3,#434343,USDJPY WEEKLY
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\usdjpy10080.fxh
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,USDJPY HOURLY
+text=4,3,#434343,USDJPY HOURLY
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\usdjpy60.fxh
+
+moving=12,#AA0808
+moving=26,#026202
+text=5,4,#E8E8E8,USDJPY 15 MIN
+text=4,3,#434343,USDJPY 15 MIN
+text=5,219,#E8E8E8,METAQUOTES
+text=4,218,#434343,METAQUOTES
+file=d:\metatraderbackup\export\usdjpy15.fxh
